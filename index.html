@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Encriptador de texto - Challenge Alura ONE</title>
+</head>
+<body>
+    <img class='logo' src="img/logo.png">
+    <main>
+        <section>
+            <textarea oninput="validarTextarea(this)" maxlength="1500" cols="39"  rows="11"  type="text" class='ingreseTexto' placeholder="Ingrese el texto aquí"></textarea>
+            <div class="info">    
+                <img class= "infoLogo" src="img/infologo.png"><p class ='infoTexto'>Sólo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button disabled="" onclick="btnEncriptar()"  class="boton botonEncriptar">Encriptar</button>
+                <button disabled="" onclick="btnDesencriptar()" class="boton botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="textoFinal">
+            <img class='buscador' src="img/perrito.png">
+            <h3 class="sinMensaje">Ningún mensaje fue encontrado</h3>
+            <br>
+            <p class='sinMensaje2'>Ingresa el texto que desees encriptar o desencriptar.</p>
+           <textarea cols="35" rows="17" class="resultado"></textarea>
+            <button onclick="copy()" class="boton botonCopiar">Copiar</button>
+        </section>
+    </main>
+<footer>
+    Desarrollado por Ariana Mansilla | Alura Challenge ONE - Oracle Next Education | 2022
+</footer>
+
+</body>
+<script src="/js/script.js"></script>
+</html>
